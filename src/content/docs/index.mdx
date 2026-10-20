@@ -1,0 +1,59 @@
+---
+title: Open Firewall Manager
+description: Central, vendor-neutral management for open-source firewalls. Starting with OPNsense.
+template: splash
+hero:
+  tagline: Central, vendor-neutral management for open-source firewalls. One configuration model, many appliances. Starting with OPNsense.
+  image:
+    light: ../../assets/logo-light.svg
+    dark: ../../assets/logo-dark.svg
+    alt: Open Firewall Manager logo
+  actions:
+    - text: Follow on GitHub
+      link: https://github.com/ofmproject
+      icon: github
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+<p><span class="ofm-status">In development, not yet released</span></p>
+
+## What OFM does
+
+<CardGrid>
+	<Card title="One model, many firewalls" icon="puzzle">
+		OFM keeps its own standard configuration model. Adapters translate it
+		for each supported operating system, starting with OPNsense.
+	</Card>
+	<Card title="Versioned configuration" icon="document">
+		Every change is a commit. Review, deploy and roll back with a clear
+		history. Local changes on a firewall are detected and can be imported.
+	</Card>
+	<Card title="Live log viewer" icon="magnifier">
+		Follow traffic as it happens. Build filters by drag and drop and spot
+		actions at a glance through colour-coded rows.
+	</Card>
+	<Card title="Metrics over time" icon="information">
+		System, interfaces, services, routing and VPN in small, comparable
+		graphs, with OFM commits and deployments marked on the timeline.
+	</Card>
+	<Card title="Built for many appliances" icon="list-format">
+		Manage firewalls in bulk. Zones and aliases resolve per appliance, and
+		policy templates and sub-policies make rules reusable.
+	</Card>
+	<Card title="Open by design" icon="open-book">
+		Every component is open source and free of cost. AGPL-3.0 for the
+		project, BSD-2-Clause for the firewall connector.
+	</Card>
+</CardGrid>
+
+## What we stand for
+
+<div class="ofm-values">
+	<div><strong>Sovereignty</strong><span>Your infrastructure, your data, your decisions.</span></div>
+	<div><strong>Openness</strong><span>Open source, open formats, no lock-in.</span></div>
+	<div><strong>Security</strong><span>Mutual TLS by default, aligned with NIST and BSI guidance.</span></div>
+	<div><strong>Simplicity</strong><span>Clear workflows instead of endless option pages.</span></div>
+</div>
+
+<p class="ofm-claim">Made for People.</p>

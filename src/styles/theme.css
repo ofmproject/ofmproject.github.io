@@ -1,0 +1,103 @@
+/*
+ * OFM brand theme for Starlight: Graphite + Violet.
+ * All brand colours live here. Replace the values with the final
+ * design-system tokens once they are exported.
+ */
+
+/* Dark mode (Starlight default) */
+:root {
+	--ofm-violet: #a78bfa;
+
+	--sl-color-accent-low: #2a1f4d;
+	--sl-color-accent: #a78bfa;
+	--sl-color-accent-high: #ddd6fe;
+
+	--sl-color-white: #ffffff;
+	--sl-color-gray-1: #e6e7ea;
+	--sl-color-gray-2: #c4c7cc;
+	--sl-color-gray-3: #8a8f98;
+	--sl-color-gray-4: #4a4f58;
+	--sl-color-gray-5: #2b2f36;
+	--sl-color-gray-6: #1d2026;
+	--sl-color-black: #15171b;
+
+	--sl-font: 'Inter Variable', system-ui, sans-serif;
+	--sl-font-mono: 'JetBrains Mono Variable', ui-monospace, monospace;
+}
+
+/* Light mode */
+:root[data-theme='light'] {
+	--ofm-violet: #6d28d9;
+
+	--sl-color-accent-low: #ede9fe;
+	--sl-color-accent: #6d28d9;
+	--sl-color-accent-high: #3b1a7a;
+
+	--sl-color-white: #15171b;
+	--sl-color-gray-1: #1d2026;
+	--sl-color-gray-2: #2b2f36;
+	--sl-color-gray-3: #4a4f58;
+	--sl-color-gray-4: #8a8f98;
+	--sl-color-gray-5: #c4c7cc;
+	--sl-color-gray-6: #eceef1;
+	--sl-color-gray-7: #f6f7f8;
+	--sl-color-black: #ffffff;
+}
+
+/* Landing page */
+.hero h1 {
+	letter-spacing: -0.02em;
+}
+
+.ofm-status {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	padding: 0.25rem 0.75rem;
+	border: 1px solid var(--sl-color-accent);
+	border-radius: 999px;
+	background: var(--sl-color-accent-low);
+	color: var(--sl-color-accent-high);
+	font-size: var(--sl-text-sm);
+	font-weight: 600;
+}
+
+.ofm-status::before {
+	content: '';
+	width: 0.5rem;
+	height: 0.5rem;
+	border-radius: 50%;
+	background: var(--ofm-violet);
+}
+
+.ofm-values {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+	gap: 1rem;
+	margin-top: 1.5rem;
+}
+
+.ofm-values > div {
+	padding: 1rem;
+	border-top: 2px solid var(--sl-color-accent);
+	background: var(--sl-color-gray-6);
+}
+
+.ofm-values strong {
+	display: block;
+	color: var(--sl-color-white);
+	margin-bottom: 0.25rem;
+}
+
+.ofm-values span {
+	color: var(--sl-color-gray-2);
+	font-size: var(--sl-text-sm);
+}
+
+.ofm-claim {
+	margin-top: 3rem;
+	text-align: center;
+	font-size: var(--sl-text-xl);
+	font-weight: 600;
+	color: var(--sl-color-white);
+}
